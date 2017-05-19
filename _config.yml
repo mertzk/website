@@ -1,0 +1,38 @@
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+repository: https://github.com/mertzk/website
+
+timezone: America/Los_Angeles
+
+defaults:
+  -
+    scope:
+      path: "_templates"
+      type: "templates"
+    values:
+      layout: "templates"
+
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /news/:year/:month/:day/:title/
+    output: true
+  tutorials:
+    output: true
+
+name: Keaton • Simple, blog-aware, static sites
+description: Transform your plain text into static websites and blogs
+url: https://mertzk.github.io/website
+
+logo: /static/jordanico.jpg
+
+exclude:
+  - .gitignore
+  - README.md
